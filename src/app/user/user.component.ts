@@ -6,8 +6,9 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './user.component.html',
-  styles: ''
+  styleUrl: './user.component.css'
 })
 export class UserComponent {
-
+  isLogged = false;
+  username = 'Beautifull Boys';
 }
