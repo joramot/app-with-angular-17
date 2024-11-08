@@ -10,6 +10,15 @@ import { GamesComponent } from '../games/games.component';
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-  isLogged = true;
+  isLogged = false;
   username = 'Beautifull Boys';
+  favGame = '';
+
+  getFavorite(gameName: string) {
+    this.favGame = gameName;
+  }
+
+  greet() {
+    alert(`Hello `);
+  }
 }
